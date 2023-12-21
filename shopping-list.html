@@ -31,16 +31,19 @@
     </ul>
 
     <script>
-
+        // Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
         let list = document.querySelector('ul');
         let input = document.querySelector('input');
         let button = document.querySelector('button');
-
+        // Create a function that will run in response to the button being clicked.
         button.onclick = function() {
             console.log('You have clicked the button');
+            // Start off by storing the current value of the input element in a variable.
             let addedItem = input.value;
             console.log(addedItem);
+            // Empty the input element by setting its value to an empty string-- ''
             input.value = '';
+            //Create three new elements--a list item (<li>), <span>, and <button>, and store them in variables.
         }
 
     </script>
