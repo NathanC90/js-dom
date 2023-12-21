@@ -59,7 +59,14 @@
                 newButton.appendChild(buttonName);
             // Append the list item as a child of the list
                 list.appendChild(newLi);
-            
+
+                //Attach an event handler to the delete button so that, when clicked, it will delete the entire list item
+                newButton.onclick = function() {
+                    newLi.remove();
+                }
+
+                // Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
+            input.focus();
         }
 
     </script>
