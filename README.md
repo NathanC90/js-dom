@@ -9,3 +9,5 @@ When an item is added to the input and press the button:
 - The item should appear in the list.
 - Each item should be given a button that can be pressed to delete that item off the list.
 - The input should be emptied and focused ready for you to enter another item.
+
+Please note that all the javascript codes are included in the script tag at the bottom of the html file.
