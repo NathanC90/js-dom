@@ -43,7 +43,23 @@
             console.log(addedItem);
             // Empty the input element by setting its value to an empty string-- ''
             input.value = '';
-            //Create three new elements--a list item (<li>), <span>, and <button>, and store them in variables.
+            // Create three new elements--a list item (<li>), <span>, and <button>, and store them in variables.    
+            const newLi = document.createElement('li');
+            const newSpan = document.createElement('span');
+            const newButton = document.createElement('button');
+                
+            //Append the span and the button as children of the list itme
+            newLi.appendChild(newSpan);
+            newLi.appendChild(newButton);
+
+            // Set the text content of the span to the input element value and the text content of the button to 'Delete'
+            const liContent = document.createTextNode(`${addedItem}`);
+            const buttonName = document.createTextNode('Delete');
+                newSpan.appendChild(liContent);
+                newButton.appendChild(buttonName);
+            // Append the list item as a child of the list
+                list.appendChild(newLi);
+            
         }
 
     </script>
